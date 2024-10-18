@@ -1,9 +1,3 @@
----
-title: "README for Diels-Alder Enzyme Homologs Identification"
-author: "Your Name"
-date: "2024-10-18"
-output: html_document
----
 
 # Project Overview
 
