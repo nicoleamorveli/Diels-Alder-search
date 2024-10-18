@@ -1,11 +1,11 @@
-    """
-    Reads multiple files containing IDs and retrieves only the IDs from the target file that do not appear in the other files.
-    Writes the unique IDs to an output text file.
 
-    :param target_file: Path to the text file containing IDs to be compared.
-    :param comparison_files: List of paths to the text files for comparison.
-    :param output_file: Path to the output text file where unique IDs will be written.
-    """
+   ## Reads multiple files containing IDs and retrieves only the IDs from the target file that do not appear in the other files.
+    ##Writes the unique IDs to an output text file.
+
+   ## :param target_file: Path to the text file containing IDs to be compared.
+  ##  :param comparison_files: List of paths to the text files for comparison.
+   ## :param output_file: Path to the output text file where unique IDs will be written.
+   ## """
 import sys
 
 def retrieve_unique_ids(target_file, comparison_files, output_file):
