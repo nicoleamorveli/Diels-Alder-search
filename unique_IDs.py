@@ -1,14 +1,17 @@
+##    """
+   ## Reads a text file containing IDs, finds IDs that appear only once,
+  ##  and writes these unique IDs to an output text file.
+
+  ##  :param input_file_path: Path to the input text file containing IDs.
+  ##  :param output_file_path: Path to the output text file where unique IDs will be saved.
+  ##  """
+
+
 import sys
 from collections import Counter
 
 def find_unique_ids(input_file_path, output_file_path):
-    """
-    Reads a text file containing IDs, finds IDs that appear only once,
-    and writes these unique IDs to an output text file.
 
-    :param input_file_path: Path to the input text file containing IDs.
-    :param output_file_path: Path to the output text file where unique IDs will be saved.
-    """
     # Read the IDs from the text file
     with open(input_file_path, 'r') as file:
         ids = file.read().splitlines()
