@@ -47,10 +47,8 @@ The study concluded that combining structural and sequence-based methods enhance
 
 # Repository Contents
 
-- **data/**: Contains cleaned datasets and result files.
 - **scripts/**: Python scripts for data processing and analysis.
 - **figures/**: Visualizations and structural representations of enzyme homologs.
-- **results/**: Summaries and outputs of the analysis.
 
 # Future Directions
 
