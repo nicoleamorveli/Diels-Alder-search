@@ -1,17 +1,35 @@
-##    """
-   ## Reads a text file containing IDs, finds IDs that appear only once,
-  ##  and writes these unique IDs to an output text file.
+# Description:
+# This script reads a text file containing IDs, identifies IDs that appear only once,
+# and writes these unique IDs to an output text file.
 
-  ##  :param input_file_path: Path to the input text file containing IDs.
-  ##  :param output_file_path: Path to the output text file where unique IDs will be saved.
-  ##  """
+# Inputs:
+# - input_file_path: Path to the input text file containing IDs (one ID per line).
+# - output_file_path: Path to the output text file where the unique IDs will be saved.
 
+# Output:
+# - A single text file containing IDs that appear only once in the input file, 
+#   with each unique ID on a new line.
+
+# Example:
+# If you have the following input file (input.txt):
+# A123
+# B456
+# C789
+# A123
+# D012
+
+# Running the script as follows:
+# python script.py input.txt output.txt
+
+# The output.txt will contain:
+# B456
+# C789
+# D012
 
 import sys
 from collections import Counter
 
 def find_unique_ids(input_file_path, output_file_path):
-
     # Read the IDs from the text file
     with open(input_file_path, 'r') as file:
         ids = file.read().splitlines()
