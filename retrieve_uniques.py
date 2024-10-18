@@ -1,6 +1,3 @@
-import sys
-
-def retrieve_unique_ids(target_file, comparison_files, output_file):
     """
     Reads multiple files containing IDs and retrieves only the IDs from the target file that do not appear in the other files.
     Writes the unique IDs to an output text file.
@@ -9,6 +6,10 @@ def retrieve_unique_ids(target_file, comparison_files, output_file):
     :param comparison_files: List of paths to the text files for comparison.
     :param output_file: Path to the output text file where unique IDs will be written.
     """
+import sys
+
+def retrieve_unique_ids(target_file, comparison_files, output_file):
+
     with open(target_file, 'r') as file:
         target_ids = set(line.strip() for line in file)
 
