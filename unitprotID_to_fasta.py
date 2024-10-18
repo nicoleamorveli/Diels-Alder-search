@@ -1,3 +1,29 @@
+# Description:
+# This script retrieves FASTA sequences from UniProt IDs provided in an input text file.
+# It fetches the sequences using the ExPASy service and saves them to an output FASTA file.
+
+# Inputs:
+# - input_file: Path to the input text file containing UniProt IDs (one ID per line).
+# - output_file: Path to the output text file where the FASTA sequences will be saved.
+
+# Output:
+# - A FASTA file containing the sequences corresponding to the provided UniProt IDs.
+
+# Example:
+# If you have the following input file (uniprot_ids.txt):
+# P12345
+# Q67890
+# AAAAA
+
+# Running the script as follows:
+# python script.py uniprot_ids.txt output.fasta
+
+# The output.fasta will contain:
+# >sp|P12345|Protein_Name_Here OS=Organism_Name GN=Gene_Name
+# [sequence data here]
+# >sp|Q67890|Another_Protein_Name OS=Another_Organism GN=Another_Gene_Name
+# [sequence data here]
+
 import argparse
 from Bio import SeqIO
 from Bio import ExPASy
@@ -25,4 +51,3 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     main(args.input_file, args.output_file)
-
